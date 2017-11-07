@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FWindSoft", "FWindSoft\FWindSoft.csproj", "{063EBAFB-9F7B-4CD7-B960-70464BF3EA33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FWindSoft.WinForm", "FWindSoft.WinForm\FWindSoft.WinForm.csproj", "{8EBDABB7-C386-40B6-BB4C-4129E8E11903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FWindSoft.Wpf", "FWindSoft.Wpf\FWindSoft.Wpf.csproj", "{28E63CC9-6CFB-47A1-8B40-4CF9E4309D51}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{063EBAFB-9F7B-4CD7-B960-70464BF3EA33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{063EBAFB-9F7B-4CD7-B960-70464BF3EA33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{063EBAFB-9F7B-4CD7-B960-70464BF3EA33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{063EBAFB-9F7B-4CD7-B960-70464BF3EA33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EBDABB7-C386-40B6-BB4C-4129E8E11903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EBDABB7-C386-40B6-BB4C-4129E8E11903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EBDABB7-C386-40B6-BB4C-4129E8E11903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EBDABB7-C386-40B6-BB4C-4129E8E11903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28E63CC9-6CFB-47A1-8B40-4CF9E4309D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28E63CC9-6CFB-47A1-8B40-4CF9E4309D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28E63CC9-6CFB-47A1-8B40-4CF9E4309D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28E63CC9-6CFB-47A1-8B40-4CF9E4309D51}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
