@@ -1,1 +1,6 @@
-﻿
+﻿1、与数据处理相关放在data
+2、与操作处理相关放在Handle
+3、系统接口扩展放在SystemInterface
+4、系统类型增加扩展方法放在SytemExterface
+5、独立的逻辑处理模块放在Tools
+6、windowsApi单独维护

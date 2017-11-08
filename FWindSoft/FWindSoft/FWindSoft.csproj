@@ -45,6 +45,7 @@
     <Compile Include="Data\CustomSettingLS\CustomSettingAdapter.cs" />
     <Compile Include="Data\CustomSettingLS\CustomTableAdapter.cs" />
     <Compile Include="Data\CustomSettingLS\CustomXmlAdapter.cs" />
+    <Compile Include="Handle\MethodProxy.cs" />
     <Compile Include="SystemInterface\CommonEqualityComparer.cs" />
     <Compile Include="SystemInterface\TypeConvert.cs" />
     <Compile Include="Tools\FileUnit\FileUnit.cs" />
