@@ -8,5 +8,6 @@ namespace FWindSoft.Wpf
 {
     public class Class1
     {
+        //dddd
     }
 }
