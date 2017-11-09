@@ -5,7 +5,7 @@ namespace FWindSoft.Tools
     /// <summary>
     /// 文件模块管理
     /// </summary>
-    public class FileUnit
+    public class FileUtil
     {
         /// <summary>
         /// 获取真实路径

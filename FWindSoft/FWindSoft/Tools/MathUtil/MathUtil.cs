@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FWindSoft.Tools
 {
-    public class MathUnit
+    public class MathUtil
     {
         /// <summary>
         /// 求最大公约数

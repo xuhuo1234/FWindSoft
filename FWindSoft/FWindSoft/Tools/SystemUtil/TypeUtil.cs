@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace FWindSoft.Tools.SystemUnit
 {
-    public class TypeUnit
+    public class TypeUtil
     {
         /// <summary>
         /// 将输入值转换成指定类型

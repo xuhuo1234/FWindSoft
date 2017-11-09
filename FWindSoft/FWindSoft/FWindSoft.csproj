@@ -48,7 +48,7 @@
     <Compile Include="Handle\MethodProxy.cs" />
     <Compile Include="SystemInterface\CommonEqualityComparer.cs" />
     <Compile Include="SystemInterface\TypeConvert.cs" />
-    <Compile Include="Tools\FileUnit\FileUnit.cs" />
+    <Compile Include="Tools\FileUtil\FileUtil.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SystemExtensions\CharExtensions.cs" />
     <Compile Include="SystemExtensions\DoubleExtensions.cs" />
@@ -56,12 +56,12 @@
     <Compile Include="SystemExtensions\RefObjectExtensions.cs" />
     <Compile Include="SystemExtensions\StringExtensions.cs" />
     <Compile Include="SystemExtensions\XmlExtensions.cs" />
-    <Compile Include="Tools\MathUnit\CombinationNumber.cs" />
-    <Compile Include="Tools\MathUnit\MathEx.cs" />
-    <Compile Include="Tools\RegexUnit\RegexCheck.cs" />
-    <Compile Include="Tools\SerializerUnit\JsonUnit.cs" />
-    <Compile Include="Tools\SerialNumberUnit\LeterCompute.cs" />
-    <Compile Include="Tools\SystemUnit\ConvertType.cs" />
+    <Compile Include="Tools\MathUtil\CombinationNumber.cs" />
+    <Compile Include="Tools\MathUtil\MathUtil.cs" />
+    <Compile Include="Tools\RegexUtil\RegexUtil.cs" />
+    <Compile Include="Tools\SerializerUtil\JsonUnit.cs" />
+    <Compile Include="Tools\SerialNumberUtil\LeterCompute.cs" />
+    <Compile Include="Tools\SystemUtil\TypeUtil.cs" />
     <Compile Include="WindowsApi\WinAPi.cs" />
   </ItemGroup>
   <ItemGroup>

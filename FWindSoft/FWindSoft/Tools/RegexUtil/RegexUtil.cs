@@ -7,7 +7,7 @@ namespace FWindSoft.Tools
     /// <summary>
     /// 正则检测
     /// </summary>
-    public class RegexUnit
+    public class RegexUtil
     {
         private readonly static Regex m_ReInteger = new Regex(@"^\-?(0|([1-9]\d*))$");
         private readonly static Regex m_RePlusInteger = new Regex(@"^(([1-9]\d*)|0)$");

@@ -7,18 +7,18 @@ using System.Collections.Generic;
 
 namespace FWindSoft.Tools
 {
-    public class JsonUnit
+    public class JsonUtil
     {
         #region 实例相关
         private readonly DataContractJsonSerializer m_Serializer;
-        public JsonUnit()
+        public JsonUtil()
         { 
         }
-        public JsonUnit(Type type, IEnumerable<Type> knownTypes)
+        public JsonUtil(Type type, IEnumerable<Type> knownTypes)
         {
             m_Serializer = new DataContractJsonSerializer(type, knownTypes);
         }
-        public JsonUnit(DataContractJsonSerializer serializer)
+        public JsonUtil(DataContractJsonSerializer serializer)
         {
             m_Serializer = serializer;
         }
