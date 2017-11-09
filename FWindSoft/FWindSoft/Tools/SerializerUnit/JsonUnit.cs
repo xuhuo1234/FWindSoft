@@ -2,11 +2,59 @@
 using System.Runtime.Serialization.Formatters;
 using System.Runtime.Serialization.Json;
 using System.Text;
+using System;
+using System.Collections.Generic;
 
 namespace FWindSoft.Tools
 {
     public class JsonUnit
     {
+        #region 实例相关
+        private readonly DataContractJsonSerializer m_Serializer;
+        public JsonUnit()
+        { 
+        }
+        public JsonUnit(Type type, IEnumerable<Type> knownTypes)
+        {
+            m_Serializer = new DataContractJsonSerializer(type, knownTypes);
+        }
+        public JsonUnit(DataContractJsonSerializer serializer)
+        {
+            m_Serializer = serializer;
+        }
+
+        public string ObjectToJsonStr(object obj)
+        {
+            string jsonStr = null;
+            using (MemoryStream stream = new MemoryStream())
+            {
+                try
+                {
+                    m_Serializer.WriteObject(stream, obj);
+                    jsonStr = Encoding.UTF8.GetString(stream.ToArray());
+                }
+                catch
+                { 
+                }
+            }
+            return jsonStr ?? string.Empty;
+        }
+        public object JsonStrToObject(string jsonStr)
+        {
+            object result = null;
+            using (MemoryStream stream = new MemoryStream(Encoding.UTF8.GetBytes(jsonStr)))
+            {
+                try
+                {
+                    result = m_Serializer.ReadObject(stream);
+                }
+                catch
+                {
+                }
+            }
+            return result;
+        }
+        #endregion
         /// <summary>
         /// 将对象转化成Json字符串
         /// </summary>
