@@ -8,5 +8,6 @@ namespace FWindSoft.WinForm
 {
     public class Class1
     {
+
     }
 }
