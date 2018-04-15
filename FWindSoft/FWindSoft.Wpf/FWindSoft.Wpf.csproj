@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>28e63cc9-6cfb-47a1-8b40-4cf9e4309d51</ProjectGuid>
+    <ProjectGuid>{28E63CC9-6CFB-47A1-8B40-4CF9E4309D51}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FWindSoft.Wpf</RootNamespace>
@@ -30,24 +30,76 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Utils\DrawingUtil.cs" />
+    <Compile Include="Utils\FontsUtil.cs" />
+    <Compile Include="Common\WindowControlHistoryData.cs" />
+    <Compile Include="Controls\BaseUserControl.cs" />
+    <Compile Include="Controls\CustomControl\DisableBorder.cs" />
+    <Compile Include="Controls\CustomControl\GridHelper.cs" />
+    <Compile Include="Controls\CustomControl\TDataGridTextColumn.cs" />
+    <Compile Include="Controls\CustomControl\TEditComboBox.cs" />
+    <Compile Include="Controls\CustomControl\TextInputControl.cs" />
+    <Compile Include="Controls\CustomControl\TTextBox.cs" />
+    <Compile Include="Controls\CustomValidationRules.cs" />
+    <Compile Include="Controls\IControlDataProvider.cs" />
+    <Compile Include="Controls\UserControl\DataGridHeaderFactory.cs" />
+    <Compile Include="Controls\UserControl\InnerCheckItem.cs" />
+    <Compile Include="Controls\UserControl\ListCategory.xaml.cs">
+      <DependentUpon>ListCategory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\UserControl\TreeCategory.xaml.cs">
+      <DependentUpon>TreeCategory.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InterfceImplement\ValueConverter.cs" />
+    <Compile Include="MVVM\BaseCommand.cs" />
+    <Compile Include="MVVM\BasePropertyChanged.cs" />
+    <Compile Include="MVVM\CallExtension.cs" />
+    <Compile Include="MVVM\Dynamic\BaseViewModel.cs" />
+    <Compile Include="MVVM\Dynamic\CodeGenerator.cs" />
+    <Compile Include="MVVM\Dynamic\CommandAdapter.cs" />
+    <Compile Include="MVVM\Dynamic\CommandAdapterFactory.cs" />
+    <Compile Include="MVVM\Dynamic\CommandAttribute.cs" />
+    <Compile Include="MVVM\Dynamic\CommandEventArgs.cs" />
+    <Compile Include="MVVM\Dynamic\CommandInfo.cs" />
+    <Compile Include="MVVM\MouseDoubleClickCommand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Systems\WpfSysCmd.cs" />
+    <Compile Include="SystemTypeExtensions\DependencyObjectExtension.cs" />
+    <Compile Include="SystemTypeExtensions\FrameworkElementExtension.cs" />
+    <Compile Include="SystemTypeExtensions\LengthExtension.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FWindSoft\FWindSoft.csproj">
+      <Project>{063ebafb-9f7b-4cd7-b960-70464bf3ea33}</Project>
+      <Name>FWindSoft</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\CustomControl\命名.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\UserControl\ListCategory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\UserControl\TreeCategory.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -57,5 +109,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
- </Project>
+</Project>

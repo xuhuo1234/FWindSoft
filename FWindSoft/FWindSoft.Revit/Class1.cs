@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FWindSoft.Wpf
+namespace FWindSoft.Revit
 {
-    public class Class1
+    class Class1
     {
-        //dddddddd
     }
 }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FWindSoft.WinForm
+namespace FWindSoft.Data
 {
-    public class Class1
+    public class BaseBll<T> : SingleInstance<T> where T:new()
     {
     }
 }

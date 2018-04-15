@@ -9,6 +9,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FWindSoft.WinForm", "FWindS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FWindSoft.Wpf", "FWindSoft.Wpf\FWindSoft.Wpf.csproj", "{28E63CC9-6CFB-47A1-8B40-4CF9E4309D51}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FWindSoft.Revit", "FWindSoft.Revit\FWindSoft.Revit.csproj", "{E2F5ADD4-E414-4334-93BD-C7112E9AA151}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "测试项目", "测试项目", "{E8665874-4EDA-47D7-AF9F-5E87EF13072F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsApplication15", "D:\开发\技术测试\DataGridView单元格合并和二维表头\DataGridView单元格合并和二维表头\WindowsApplication15\WindowsApplication15\WindowsApplication15.csproj", "{B58C7AA2-41CE-4BC0-8307-C0FBB375BE09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,8 +33,19 @@ Global
 		{28E63CC9-6CFB-47A1-8B40-4CF9E4309D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28E63CC9-6CFB-47A1-8B40-4CF9E4309D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28E63CC9-6CFB-47A1-8B40-4CF9E4309D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2F5ADD4-E414-4334-93BD-C7112E9AA151}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2F5ADD4-E414-4334-93BD-C7112E9AA151}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2F5ADD4-E414-4334-93BD-C7112E9AA151}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2F5ADD4-E414-4334-93BD-C7112E9AA151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B58C7AA2-41CE-4BC0-8307-C0FBB375BE09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B58C7AA2-41CE-4BC0-8307-C0FBB375BE09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B58C7AA2-41CE-4BC0-8307-C0FBB375BE09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B58C7AA2-41CE-4BC0-8307-C0FBB375BE09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B58C7AA2-41CE-4BC0-8307-C0FBB375BE09} = {E8665874-4EDA-47D7-AF9F-5E87EF13072F}
 	EndGlobalSection
 EndGlobal

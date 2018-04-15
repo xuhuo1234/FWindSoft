@@ -41,10 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ControlRefData\TComboxItem.cs" />
+    <Compile Include="Data\CommonDataStructure\BaseBll.cs" />
+    <Compile Include="Data\CommonDataStructure\BaseContext.cs" />
+    <Compile Include="Data\CommonDataStructure\InitObejct.cs" />
+    <Compile Include="Data\CommonDataStructure\MomentVariable.cs" />
+    <Compile Include="Data\CommonDataStructure\ParameterOwerObject.cs" />
+    <Compile Include="Data\CommonDataStructure\ParameterProperty.cs" />
+    <Compile Include="Data\CommonDataStructure\SingleInstance.cs" />
+    <Compile Include="Data\CommonDataStructure\TNode.cs" />
+    <Compile Include="Data\CommonDataStructure\StringPathParse.cs" />
     <Compile Include="Data\CustomSettingLS\CustomJsonAdapter.cs" />
     <Compile Include="Data\CustomSettingLS\CustomSettingAdapter.cs" />
     <Compile Include="Data\CustomSettingLS\CustomTableAdapter.cs" />
     <Compile Include="Data\CustomSettingLS\CustomXmlAdapter.cs" />
+    <Compile Include="Handle\MatchRef\Parse.cs" />
+    <Compile Include="Handle\MatchRef\TargetObject.cs" />
+    <Compile Include="Handle\MatchRef\Validate.cs" />
     <Compile Include="Handle\MethodProxy.cs" />
     <Compile Include="SystemInterface\CommonEqualityComparer.cs" />
     <Compile Include="SystemInterface\TypeConvert.cs" />
@@ -66,6 +79,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="项目组织规则.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Storage\" />
+    <Folder Include="Data\UnitsManager\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
